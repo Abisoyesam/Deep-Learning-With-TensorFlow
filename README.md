@@ -14,3 +14,6 @@ TensorFlow Developer Certificate by ZeroToMastery
     * Making prediction with a model(using pattern) 
     * Evaluating model predictions, Saving and loading models 
     * Using trained model to make prediciton on custom data. 
+
+## Tensor Fundamentals
+Click <a href="./01 - Fundamentals/README.md">here</a> to read the documentation. Topic covered are: 
