@@ -16,4 +16,4 @@ TensorFlow Developer Certificate by ZeroToMastery
     * Using trained model to make prediciton on custom data. 
 
 ## Tensor Fundamentals
-Click <a href="./01 - Fundamentals/README.md">here</a> to read the documentation. Topic covered are: 
+Click <a href="./01 - Fundamentals/README.md">here</a> to read the documentation. Topic covered are: Creating tensor, Random and Shuffling tensor, Tensor from numpy, Getting tensor attributes, Indexing and Expanding tensor, Tensor operation and manipulation 
