@@ -12,3 +12,6 @@
 - <a href='./04 - Tensor from Numpy.ipynb'>Creating Tensor from Numpy</a>
     - likely numpy objects `.ones(), .zeros()`
     - creating and reshaping tensor from numpy
+
+- <a href='./05 - Info from Tensor.ipynb'>Getting Info from Tensor</a>
+    - when working on tensors, you may want to checkout attributes like `shape`, `size`, `axis`, `rank`
