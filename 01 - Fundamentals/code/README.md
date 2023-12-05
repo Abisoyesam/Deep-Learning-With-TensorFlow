@@ -21,3 +21,8 @@
 - <a href='./06 - Indexing Tensor.ipynb'>Indexing and Expanding Tensor</a>
     - Indexing & slicing tensor is done like python list
     - Adding new dimension (expanding) tensor is done using `tf.newaxis` or `tf.expand_dims`
+
+- <a href='./07 - Tensor Operations.ipynb'>Tensor Operations</a>
+    - Basic element-wise operation (`+`, `-`, `*`, `/`)
+    - Matrix multiplication (`@` operation)
+    - Tensor transpose VS reshape
