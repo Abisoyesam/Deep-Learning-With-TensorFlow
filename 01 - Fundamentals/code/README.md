@@ -32,3 +32,4 @@
     - Aggregating tensor as in: getting sum, mean, std, variance. `tf.reduce_sum()`, `tf.math.reduce_std()`
     - Positional max and min of tensor
     - Squeezing tensor `tf.squeez()`
+    - One-hot encoding `tf.one_hot()`
