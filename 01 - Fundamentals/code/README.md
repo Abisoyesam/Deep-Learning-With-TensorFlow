@@ -26,3 +26,8 @@
     - Basic element-wise operation (`+`, `-`, `*`, `/`)
     - Matrix multiplication (`@` operation)
     - Tensor transpose VS reshape
+
+- <a href='./08 - Tensor Manipulation.ipynb'>Tensor Manipulations</a>
+    - Changing datatype `tf.cast()`
+    - Aggregating tensor as in: getting sum, mean, std, variance. `tf.reduce_sum()`, `tf.math.reduce_std()`
+    - Positional max and min of tensor
