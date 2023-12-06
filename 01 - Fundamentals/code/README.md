@@ -33,3 +33,9 @@
     - Positional max and min of tensor
     - Squeezing tensor `tf.squeez()`
     - One-hot encoding `tf.one_hot()`
+
+- <a href='./09 - Tensor VS Numpy.ipynb'>Tensor VS NumPy</a>
+    |Difference|TensorFlow Tensor|NumPy Array|
+    |:--------:|:---------------:|:---------:|
+    |dtype     | 32-bits         | 64-bits   |
+    |numerical processing|faster|fast|
