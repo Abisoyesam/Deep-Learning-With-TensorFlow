@@ -35,6 +35,8 @@
     - One-hot encoding `tf.one_hot()`
 
 - <a href='./09 - Tensor VS Numpy.ipynb'>Tensor VS NumPy</a>
+    - Accessing GPU and TPU on Google Colab
+    
     |Difference|TensorFlow Tensor|NumPy Array|
     |:--------:|:---------------:|:---------:|
     |dtype     | 32-bits         | 64-bits   |
