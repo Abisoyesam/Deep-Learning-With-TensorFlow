@@ -61,6 +61,8 @@ model.fit(X_train, y_train, epochs=100)
 # epochs -> 100 laps or iterations.
 ```
 
+**Note:** Fully connected layer is known as <span style="color:red;font-weight:bolder">Dense</span>.
+
 ## Steps in modelling with TensorFlow
 
 ![Steps](./images/steps.JPG)
@@ -88,8 +90,17 @@ A model can be improved by altering the steps in creating it.
     - give the model more examples to learn from.
 
 
-**N.B:** <span style="color:yellow">The learning rate is the most important hyperparameter.</span>
+**N.B:** 
+
+1. <span style="color:yellow">The learning rate is the most important hyperparameter.</span>
+2. When improving model, <span style="color:orange">you experiment, experiment, experiment!!!</span>
 
 ## Evaluating a model
 
-Hyperparameters in neural network is like a dial/knob you can tweak
+Hyperparameters in neural network is like a dial/knob you can tweak. When evaluating a model, <span style="color:magenta">you visualize, visualize, visualize!!!</span>
+
+It is good to visualize:
+- **The data:** what data are we working with? What does it look like? `plt.scatter()`
+- **The model itself:** what does the model look like? `model.summary()`
+- **The training of a model:** how does a model perform while it learns?
+- **The prediction of the model:** how do the predictions of a model line up against the ground truth (the original labels)?
