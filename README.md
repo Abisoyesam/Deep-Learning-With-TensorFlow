@@ -18,6 +18,9 @@ TensorFlow Developer Certificate by ZeroToMastery
 ## Tensor Fundamentals
 Click <a href="./01 - Fundamentals/README.md">**here**</a> to read the documentation. 
 
-Topic covered are: Creating tensor, Random and Shuffling tensor, Tensor from numpy, Getting tensor attributes, Indexing and Expanding tensor, Tensor operation and manipulation, Casting tensor, Aggregating tensor, squeezing tensor, hot encoding, Tensor Vs Numpy, Accessing GPU runtime.
+**Topics covered are:** Creating tensor, Random and Shuffling tensor, Tensor from numpy, Getting tensor attributes, Indexing and Expanding tensor, Tensor operation and manipulation, Casting tensor, Aggregating tensor, squeezing tensor, hot encoding, Tensor Vs Numpy, Accessing GPU runtime.
 
 ## Neural Network Regression with TensorFlow
+Click <a href="./02 - Neural Network Regression/README.md">**here**</a> to read the documentation. 
+
+**Topics covered are:**
