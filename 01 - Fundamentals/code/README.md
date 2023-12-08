@@ -3,12 +3,16 @@
 - <a href='01 - Tensorflow.ipynb'>Creating Tensor with `tf.constant`</a>
     - Scalar dimension & Vector dimension
     - Matrix dimension & Tensor 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
 - <a href='./02 - Creating Tensor.ipynb'>Creating Tensor with `tf.Variable`</a>
     - `.assign()` object
 
 - <a href='./03 - Random & Shuffling Tensor.ipynb'>Creating Random Tensor and Shuffling Tensor</a>
     - Random tensor from uniform and normal distribution
+<<<<<<< HEAD
     - Shuffling tensor inherent order
 
 - <a href='./04 - Tensor from Numpy.ipynb'>Creating Tensor from Numpy</a>
@@ -41,3 +45,6 @@
     |:--------:|:---------------:|:---------:|
     |dtype     | 32-bits         | 64-bits   |
     |numerical processing|faster|fast|
+=======
+    - Shuffling tensor inherent order
+>>>>>>> refs/remotes/origin/main
