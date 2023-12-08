@@ -23,7 +23,7 @@ These are problems trying to predict a continous value (number) such as house pr
 
 The inputs are features whose shape could be more than one but the output is just a single outcome.
 
-## Architecture of a regression model
+## Architecture of a Neural Network Regression Model
 
 |Hyperparameters| Typical Value|
 |:--------------:|:-------------|
@@ -32,6 +32,31 @@ The inputs are features whose shape could be more than one but the output is jus
 |Neurons per hidden layer|It is problem specific, generally **10 to 100**.|
 |Output layer shape|Same shape as desired prediction shape (e.g 1 for house price)|
 |Hidden activation|Usually **RELU** (rectified linear unit)|
-|Output activation|None, RELU, logistic/tanh|
+|Output activation|None, RELU, logistic or tanh|
 |Loss function|**MSE** (Mean Square Error) or **MAE** (Mean Absolute Error) or Huber (combination of MAE & MSE) if outliers|
 |Optimizer|**SDG** (stochastic gradient descent), **Adam**|
+
+```py
+#import the library
+import tensorflow as tf
+
+# 1. create a model (specified to your problem)
+model = tf.keras.Sequential([
+    # input layer -> shape 3 means 3 features (independent variables)
+    tf.keras.Input(shape=(3,)),
+    # 3 hidden layers with 100 neurons
+    tf.keras.layers.Dense(100, activation='relu'),
+    tf.keras.layers.Dense(100, activation='relu'),
+    tf.keras.layers.Dense(100, activation='relu'),
+    # output layer -> 1 means just a target/predicted value with no activation
+    tf.keras.layers.Dense(1, activation=None)
+])
+
+# 2. compile the model
+model.compile(loss=tf.keras.losses.mae, optimizer=tf.keras.optimizers.Adam(lr=0.001),metrics=['mae'])
+# loss function -> Mean Absolute Error, Optimizer (how to improve the model to decrease loss) -> Adam, Learning rate (lr) -> 0.001.
+
+# 3. fit the model
+model.fit(X_train, y_train, epochs=100)
+# epochs -> 100 laps or iterations.
+```
