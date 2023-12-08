@@ -36,10 +36,10 @@
   - Squeezing tensor `tf.squeez()`
   - One-hot encoding `tf.one_hot()`
 
-- <a href='./09 - Tensor VS Numpy.ipynb'>Tensor VS NumPy</a> - Accessing GPU and TPU on Google Colab
-      |Difference|TensorFlow Tensor|NumPy Array|
-      |:--------:|:---------------:|:---------:|
-      |dtype     | 32-bits         | 64-bits   |
-      |numerical processing|faster|fast|
-  ======= - Shuffling tensor inherent order
-  > > > > > > > refs/remotes/origin/main
+- <a href='./09 - Tensor VS Numpy.ipynb'>Tensor VS NumPy</a> 
+- Accessing GPU and TPU on Google Colab
+      
+  |Difference|TensorFlow Tensor|NumPy Array|
+  |:--------:|:---------------:|:---------:|
+  |dtype     | 32-bits         | 64-bits   |
+  |numerical processing|faster|fast|
