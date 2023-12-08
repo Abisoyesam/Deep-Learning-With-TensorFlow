@@ -17,4 +17,21 @@ These are problems trying to predict a continous value (number) such as house pr
     - Creating a model, compiling a model, fitting a model, evaluating a model
 - Different evaluation methods
 
-## Regression Inputs and Outputs
+## Regression Inputs and Output
+
+![Input_Output](./images/input_output.JPG)
+
+The inputs are features whose shape could be more than one but the output is just a single outcome.
+
+## Architecture of a regression model
+
+|Hyperparameters| Typical Value|
+|:--------------:|:-------------|
+|Input layer shape|Same shape as the number of features (e.g **3** for bedrooms, bathroom, and car spaces in housing price prediction)|
+|Hidden layer (s)|It is problem specific. min = 1, max = unlimited|
+|Neurons per hidden layer|It is problem specific, generally **10 to 100**.|
+|Output layer shape|Same shape as desired prediction shape (e.g 1 for house price)|
+|Hidden activation|Usually **RELU** (rectified linear unit)|
+|Output activation|None, RELU, logistic/tanh|
+|Loss function|**MSE** (Mean Square Error) or **MAE** (Mean Absolute Error) or Huber (combination of MAE & MSE) if outliers|
+|Optimizer|**SDG** (stochastic gradient descent), **Adam**|
