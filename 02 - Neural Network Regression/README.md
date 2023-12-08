@@ -86,3 +86,6 @@ A model can be improved by altering the steps in creating it.
 3. **Fitting a model:** You might:
     - fit a model for more **epochs** (leave it training for longer)
     - give the model more examples to learn from.
+
+
+**N.B:** <span style="color:yellow">The learning rate is the most important hyperparameter.</span>
