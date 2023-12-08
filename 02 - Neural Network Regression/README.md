@@ -64,3 +64,25 @@ model.fit(X_train, y_train, epochs=100)
 ## Steps in modelling with TensorFlow
 
 ![Steps](./images/steps.JPG)
+
+1. Construct or import a pretrained model relevant to your problem.
+2. Compile the model (prepare it to be used with data)
+    - **Loss:** how wrong your model predictions are compared to the truth label (you want to minimize this).
+    - **Optimizer:** how your model should update its internal patterns to better its predictions.
+    - **Metrics:** human interpretable values for how well your model is doing.
+3. Fit the model to the training data so it can discover patterns.
+    - **Epochs:** how many times the model will go through all the training examples.
+4. Evaluating the model on the test data (how reliable are our model's predictions?)
+
+## Improving a model
+A model can be improved by altering the steps in creating it. 
+1. **Creating a model:** You might:
+    - add more layers
+    - increase the number of hidden units (neurons)
+    - change the activation function of each layer.
+2. **Compiling a model:** You might:
+    - change the optimization function
+    - perhaps change the *learning rate* of optimizer
+3. **Fitting a model:** You might:
+    - fit a model for more **epochs** (leave it training for longer)
+    - give the model more examples to learn from.
