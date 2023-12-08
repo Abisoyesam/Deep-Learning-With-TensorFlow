@@ -89,3 +89,7 @@ A model can be improved by altering the steps in creating it.
 
 
 **N.B:** <span style="color:yellow">The learning rate is the most important hyperparameter.</span>
+
+## Evaluating a model
+
+Hyperparameters in neural network is like a dial/knob you can tweak

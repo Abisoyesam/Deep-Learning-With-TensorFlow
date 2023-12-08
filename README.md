@@ -23,4 +23,4 @@ Click <a href="./01 - Fundamentals/README.md">**here**</a> to read the documenta
 ## Lesson 2: Neural Network Regression with TensorFlow
 Click <a href="./02 - Neural Network Regression/README.md">**here**</a> to read the documentation. 
 
-**Topics covered are:** Building hands-on Neural Network Regression model; Neural Network architectures, steps in modelling with tensorflow, Improving a model - by increasing epochs, changing optimizer, changing learning rate, adding hidden layers.
+**Topics covered are:** Building hands-on Neural Network Regression model; Neural Network architectures, steps in modelling with tensorflow, Improving a model - by increasing epochs, changing optimizer, changing learning rate, adding hidden layers; Evaluating a model,
