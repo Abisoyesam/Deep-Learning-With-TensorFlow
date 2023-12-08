@@ -60,3 +60,7 @@ model.compile(loss=tf.keras.losses.mae, optimizer=tf.keras.optimizers.Adam(lr=0.
 model.fit(X_train, y_train, epochs=100)
 # epochs -> 100 laps or iterations.
 ```
+
+## Steps in modelling with TensorFlow
+
+![Steps](./images/steps.JPG)

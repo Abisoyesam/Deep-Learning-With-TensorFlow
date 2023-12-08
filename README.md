@@ -23,4 +23,4 @@ Click <a href="./01 - Fundamentals/README.md">**here**</a> to read the documenta
 ## Neural Network Regression with TensorFlow
 Click <a href="./02 - Neural Network Regression/README.md">**here**</a> to read the documentation. 
 
-**Topics covered are:**
+**Topics covered are:** Building hands-on Neural Network Regression model; Neural Network architectures, steps in modelling with tensorflow
