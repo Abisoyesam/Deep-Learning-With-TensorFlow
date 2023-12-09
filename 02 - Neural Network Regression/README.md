@@ -104,3 +104,35 @@ It is good to visualize:
 - **The model itself:** what does the model look like? `model.summary()`
 - **The training of a model:** how does a model perform while it learns?
 - **The prediction of the model:** how do the predictions of a model line up against the ground truth (the original labels)?
+
+```py
+# visualize using a plotting function
+def plot_predictions(train_data=X_train,
+                     train_labels=y_train,
+                     test_data=X_test,
+                     test_labels=y_test,
+                     predictions=y_pred
+                    ):
+    """
+    plot training data, test data and compares predictions to ground truth
+    """
+    plt.figure(figsize=(10,7))
+    # plot training data in blue
+    plt.scatter(train_data, train_labels, c="b", label="Training data")
+    # plot testing data in green
+    plt.scatter(test_data, test_labels, c="g", label="Testing data")
+    # plot model prediction
+    plt.scatter(test_data, predictions, c="r", label="Prediction")
+    # show legend
+    plt.legend();
+```
+
+## Evaluation Metrics
+Some common regression evaluation metrics are:
+
+|Metric Name|Metric Formula|TensorFlow code|When to use|
+|:---------:|:------------:|:-------------:|:-----:|
+|Mean Absolute Error (MAE)|$$MAE= \sum_{i=1}^n \dfrac{\mid y_i - x_i\mid}{n}$$|`tf.keras.losses.MAE()` or `tf.metrics.mean_absolute_error()`|As a great starter metric for any regression problem|
+|Mean Square Error (MSE)|$$MSE= \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2$$|`tf.keras.losses.MAE()` or `tf.metrics.mean_absolute_error()`|As a great starter metric for any regression problem|
+
+![metric](./images/metric.JPG)
