@@ -28,3 +28,6 @@
 - <a href='./04 - Evaluation Metrics.ipynb'>Evaluating Linear Regression Metrics</a>
   - Mean Square Error `tf.keras.losses.MSE()`
   - Mean Absolute Error `tf.keras.losses.MAE()`
+
+- <a href='./05 - Comparing models.ipynb'>Comparing Improved Models</a>
+  - 

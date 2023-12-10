@@ -136,3 +136,5 @@ Some common regression evaluation metrics are:
 |Mean Square Error (MSE)|$$MSE= \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2$$|`tf.keras.losses.MAE()` or `tf.metrics.mean_absolute_error()`|As a great starter metric for any regression problem|
 
 ![metric](./images/metric.JPG)
+
+## Comparing models
