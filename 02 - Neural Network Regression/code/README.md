@@ -1,5 +1,6 @@
 # Neural Network Regression
 
+<<<<<<< HEAD
 - <a href='./01 - NN Regression.ipynb'>NN Regression</a> 
     - Scalar dimension & Vector dimension - Matrix dimension & Tensor
 
@@ -31,3 +32,5 @@
 
 - <a href='./05 - Comparing models.ipynb'>Comparing Improved Models</a>
   - 
+=======
+>>>>>>> 718cc065d9c05d13e1a45d2fda7077912f02da09
