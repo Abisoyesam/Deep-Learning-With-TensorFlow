@@ -138,3 +138,12 @@ Some common regression evaluation metrics are:
 ![metric](./images/metric.JPG)
 
 ## Comparing models
+
+You can decide to tabulate the MSE and MAE score of different models to check the model that perform best. As in:
+
+|Model|MSE|MAE|
+|-----|---|---|
+|model_1|14.906258|223.028656|
+|model_2|11.026622|129.633865|
+|model_3|1.066563|1.160536|
+|model_4|0.760612|0.593732|

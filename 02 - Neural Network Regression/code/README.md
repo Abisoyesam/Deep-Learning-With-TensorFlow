@@ -30,4 +30,5 @@
   - Mean Absolute Error `tf.keras.losses.MAE()`
 
 - <a href='./05 - Comparing models.ipynb'>Comparing Improved Models</a>
-  - 
+  - build different models and tabulation the mse and mae score.
+  - tracking models experiments `tensorboard`, `weight and biases`
