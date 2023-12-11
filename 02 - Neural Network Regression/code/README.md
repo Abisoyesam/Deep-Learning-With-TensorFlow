@@ -32,3 +32,7 @@
 - <a href='./05 - Comparing models.ipynb'>Comparing Improved Models</a>
   - build different models and tabulation the mse and mae score.
   - tracking models experiments `tensorboard`, `weight and biases`
+
+- <a href='./05 - Comparing models.ipynb'>Saving and Loading Models</a>
+  - Saving model `model.save("name of the model")` or `model.save("model_name.h5")`
+  - Loading model `tf.keras.models.load_model("fiel path of the model")`
