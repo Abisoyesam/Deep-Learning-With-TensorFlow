@@ -155,3 +155,7 @@ There are two formats to save a tensorflow model.
 1. SavedModelFormat: Model saved in this format can be restored using `tf.keras.models.load_model`
 
 2. HDF5 format: It has the extension `.h5`. This format allows to store and organise large amounts of data. Use this when you are working on large data and would like to deploy on another app.
+
+## Features Scaling to Improve Models
+
+![Scaling](./images/scaling.JPG)
