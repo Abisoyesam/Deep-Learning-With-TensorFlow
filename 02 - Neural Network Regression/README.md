@@ -147,3 +147,11 @@ You can decide to tabulate the MSE and MAE score of different models to check th
 |model_2|11.026622|129.633865|
 |model_3|1.066563|1.160536|
 |model_4|0.760612|0.593732|
+
+## Saving Models
+
+There are two formats to save a tensorflow model.
+
+1. SavedModelFormat: Model saved in this format can be restored using `tf.keras.models.load_model`
+
+2. HDF5 format: It has the extension `.h5`. This format allows to store and organise large amounts of data. Use this when you are working on large data and would like to deploy on another app.
