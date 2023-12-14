@@ -25,3 +25,9 @@ Click <a href="./02 - Neural Network Regression/README.md">**here**</a> to read 
 
 **Topics covered are:** Building hands-on Neural Network Regression model; Neural Network architectures, steps in modelling with tensorflow, Improving a model - by increasing epochs, changing optimizer, changing learning rate, adding hidden layers; Evaluating a model - visualizing model, visualizing model's prediction, Evaluating metrics, traking experiment models, save and load model.
 
+## Lesson 3: Neural Network Classification with TensorFlow. 
+
+Click <a href="./03 - Neural Network Classification/README.md">**here**</a> to read the documentation. 
+
+**Topics covered are:**
+
