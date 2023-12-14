@@ -24,5 +24,23 @@ Assuming we are building an food app to classify whether a food is pizza, stake,
 1. The input is different images of the food.
 2. Make sure they are all in the same size (height and width).
 3. Change the width, height and color channel (RGB) into tensor by numerically encoding it. 
+4. Machine learning algorithm or a transfer learning.
+5. Output of multiclass or binary classification.
 
 ![Input and Output](./images/input_ouput.JPG)
+
+### Input and Output Shapes
+- Dimension of the input tensor can be inform of `batch_size`, `width`, `height`, and `colour_channels` 
+
+    ```py
+    Shape = [batch_size, width, height, color_channel]
+    Shape = [None, 224, 224, 3]
+
+    Shape = [32, 224, 224, 3]
+    # 32 is a very common batch size.
+    ```
+- Output shape is determined by the number of classes. Binary has `2` output as shape while multi class is greater than 2 `>2`.
+
+![Shape](./images/shape.JPG)
+
+> The shape varies depending on the problem you're working with.
