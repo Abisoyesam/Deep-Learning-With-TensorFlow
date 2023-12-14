@@ -44,3 +44,40 @@ Assuming we are building an food app to classify whether a food is pizza, stake,
 ![Shape](./images/shape.JPG)
 
 > The shape varies depending on the problem you're working with.
+
+## Architecture of the Classification Model
+```py
+import tensorflow as tf
+
+# 1. Create a model (specified to your problem)
+model = tf.keras.Sequential([
+    tf.keras.layers.Input(shape=(224, 224, 3)),
+    tf.keras.layers.Dense(100, activation='relu'),
+    tf.keras.layers.Dense(3, activation='softmax')
+])
+
+# 2. Compile the model
+model.compile(loss=tf.keras.losses.CategoricalCrossentropy(),
+    optimizer=tf.keras.optimizers.Adam(),
+    metrics=['accuracy']
+)
+
+# 3. Fit the model
+model.fit(X_train, y_train, epochs=5)
+
+# 4. Evaluate the model
+model.evaluate(X_test, y_test)
+```
+
+<hr>
+
+|Hyperparameter|Binary Classification| Multiclass Classification|
+|:-------------|:----:|:------:|
+|Input layer shape|Same as number of features|Same as binary classification|
+|Hidden layer(s)|Min = 1, Max = Unlimited|Same as binary classification|
+|Neurons per hidden layers|generally 10 to 100|Same as binary classification|
+|Output layer shape|1 (one class or the other)|1 per class|
+|Hidden activation|Usually `ReLU`|Same as binary classification|
+|Output activation|Sigmoid|`Softmax`|
+|Loss function|Cross entropy `tf.keras.losses.BinaryCrossentropy`|Cross entropy `tf.keras.losses.CategoricalCrossentropy`|
+|Optimizer|SDG (stochastic gradient descent), `Adam`|Same as binary classification|
