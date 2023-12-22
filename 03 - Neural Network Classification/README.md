@@ -128,7 +128,9 @@ def plot_decision_boundary(model, X, y):
 - Use `relu` for the hidden layer activation and use `sigmoid` for the output layer.
 - Replication non-linear fuction from scratch.
     - Sigmoid $\sigma (z) = \dfrac{1}{1 + e^{-z}}$
-    - ReLU $f(x) = $ ![relu](./images/relu.JPG)
+    - ReLU 
+    
+    ![relu](./images/relu.JPG)
 
 ![non-linear](./images/Non-linear.JPG)
 
