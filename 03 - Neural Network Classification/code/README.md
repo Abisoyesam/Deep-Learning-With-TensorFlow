@@ -11,3 +11,4 @@
     - Change activation to `non-linear`
     - Replicate `Sigmoid` function
     - Visualizing history to plot model loss curves
+    - Finding best learning rate
