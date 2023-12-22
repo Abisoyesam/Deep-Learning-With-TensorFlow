@@ -123,4 +123,17 @@ def plot_decision_boundary(model, X, y):
     plt.ylim(yy.min(), yy.max())
 ```
 
-##
+## Neural Network Classification Non Linerity
+- Improving the neural network classification by adding non-linear activation.
+- Use `relu` for the hidden layer activation and use `sigmoid` for the output layer.
+- Replication non-linear fuction from scratch.
+    - Sigmoid $\sigma (z) = \dfrac{1}{1 + e^{-z}}$
+    - ReLU $f(x) = $ ![relu](./images/relu.JPG)
+
+![non-linear](./images/Non-linear.JPG)
+
+## History and Callbacks
+- Visualizing `History` to plot loss curves of models.
+```py
+history = model.fit(X, y, epochs=n_iters)
+```

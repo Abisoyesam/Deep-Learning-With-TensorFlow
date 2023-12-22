@@ -9,3 +9,5 @@
 - <a href='./02 - Non-linearity.ipynb'>NN Classification Non Linearity</a> 
     - Try out tensorflow playground
     - Change activation to `non-linear`
+    - Replicate `Sigmoid` function
+    - Visualizing history to plot model loss curves

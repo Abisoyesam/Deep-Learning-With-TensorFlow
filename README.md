@@ -29,5 +29,5 @@ Click <a href="./02 - Neural Network Regression/README.md">**here**</a> to read 
 
 Click <a href="./03 - Neural Network Classification/README.md">**here**</a> to read the documentation. 
 
-**Topics covered are:** Building hands-on Neural Network Classification model; Neural Network architectures, steps in modelling with tensorflow, Improving the model
+**Topics covered are:** Building hands-on Neural Network Classification model; Neural Network architectures, Steps in modelling with tensorflow, Improving the model, Non linear activations (Sigmoid, ReLU), Replicating non-linear activation function from scratch, Evaluating on testing data, Visualizing history
 
