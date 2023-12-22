@@ -139,3 +139,12 @@ history = model.fit(X, y, epochs=n_iters)
 ```
 - Fitting data to a model return an History object. It `History.history` attribute is a record of training loss values and metrics values at successive epochs, as well as validation loss values and validation metrics values (if applicable).
 - **Callbacks:** They are used to find the best learning rate of model where loss decreases the most during the training.
+    - **Note:** Callback must be created before the data is fitted to the model.
+    ```py
+    # Create a learning rate callback
+    lr_scheduler = tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-4 * 10 ** (epoch/20))
+
+    # Fit the model with data
+    model.fit(X, y, epochs=100, callbacks=[lr_scheduler])
+    ```
+    ![ideal_learningrate](./images/ideal_lr.JPG)
