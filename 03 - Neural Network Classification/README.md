@@ -137,3 +137,4 @@ def plot_decision_boundary(model, X, y):
 ```py
 history = model.fit(X, y, epochs=n_iters)
 ```
+- Fitting data to a model return an History object. It History.history attribute is a record of training loss values and metrics values at successive epochs, as well as validation loss values and validation metrics values (if applicable).
