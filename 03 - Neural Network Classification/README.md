@@ -129,8 +129,8 @@ def plot_decision_boundary(model, X, y):
 - Replication non-linear fuction from scratch.
     - Sigmoid $\sigma (z) = \dfrac{1}{1 + e^{-z}}$
     - ReLU 
-    
-    ![relu](./images/relu.JPG)
+
+![relu](./images/relu.JPG)
 
 ![non-linear](./images/Non-linear.JPG)
 
@@ -150,3 +150,5 @@ history = model.fit(X, y, epochs=n_iters)
     model.fit(X, y, epochs=100, callbacks=[lr_scheduler])
     ```
     ![ideal_learningrate](./images/ideal_lr.JPG)
+
+## Classification Evaluation Methods
