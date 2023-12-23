@@ -17,3 +17,6 @@
     - `accuracy`, `precision`, `confusion matrix`, `recall`, `f1-score`
     - Anatomy of confusion matrix
     - `False negative`, `False positive`, `True positive`, `True negative`.
+
+- <a href='./04 - Multiclass Classification.ipynb'>Multi Class Neural Network Classification</a> 
+    - 
