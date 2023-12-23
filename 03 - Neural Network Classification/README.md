@@ -152,3 +152,17 @@ history = model.fit(X, y, epochs=n_iters)
     ![ideal_learningrate](./images/ideal_lr.JPG)
 
 ## Classification Evaluation Methods
+> **Note:** *tp = True Positive, tn = True Negative, fp = False Positive, fn = False Negative*
+
+|Metric Name | Metric Formula | Code |When to use|
+|:----------:|:---------------:|:------:|:---------:|
+|Accuracy|Accuracy = $\dfrac{tp + tn}{tp + tn + fp +fn}$|`tf.keras.metrics.Accuracy()` $\\$ `sklearn.metrics.accuracy_score()`|Default metric for classification problem. Not the best for imbalanced classes|
+|Precision|Precision = $\dfrac{tp}{tp + fp}$|`tf.keras.metrics.Precision()` $\\$ `sklearn.metrics.precision_score()`|Higher precision leads to **less false positives**|
+|Recall|Recall = $\dfrac{tp}{tp + fn}$|`tf.keras.metrics.Recall()` $\\$ `sklearn.metrics.recall_score()`|Higher recall leads to **less false negatives**|
+|F1-score|F1-score = 2.$\dfrac{precision . recall}{precision + recall}$|`sklearn.metrics.f1_score()`|Combination of precision and recall, usually good overall metric for a classification model|
+|Confusion matrix|NA|`Custom function` $\\$ `sklearn.metrics.confusion_matrix()`|When comparing prediction to truth label to see where model gets confused.|
+
+
+:key: **False Positive:** By analogy - A false positive is when someone who doesn't have coronavirus tests positive for it. **False Negative:** Someone who has coronavirus tested negative for it.
+
+:book: **Precision Recall Tradeoff:** Unfortunately, you can't have both precision and recall high. <span style="color:yellow">If you increase precision, it will reduce recall, and vice versa.</span>
