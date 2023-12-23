@@ -176,3 +176,4 @@ history = model.fit(X, y, epochs=n_iters)
 - **False negative:** model predicts 0 when truth is 1.
 
 ## Multi-Class Neural Network Classification
+When you have more than two classes as an option, it is known as **multi-class classification**.
