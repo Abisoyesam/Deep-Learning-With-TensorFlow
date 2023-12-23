@@ -12,3 +12,8 @@
     - Replicate `Sigmoid` function
     - Visualizing history to plot model loss curves
     - Finding best learning rate using `callbacks`
+
+- <a href='./03 -  NN Classification Evaluation.ipynb'>Classification Evaluation Methods</a> 
+    - `accuracy`, `precision`, `confusion matrix`, `recall`, `f1-score`
+    - Anatomy of confusion matrix
+    - `False negative`, `False positive`, `True positive`, `True negative`.

@@ -166,3 +166,11 @@ history = model.fit(X, y, epochs=n_iters)
 :key: **False Positive:** By analogy - A false positive is when someone who doesn't have coronavirus tests positive for it. **False Negative:** Someone who has coronavirus tested negative for it.
 
 :book: **Precision Recall Tradeoff:** Unfortunately, you can't have both precision and recall high. <span style="color:yellow">If you increase precision, it will reduce recall, and vice versa.</span>
+
+## Anatomy of Confusion Matrix
+![Confusion matrix](./images/confusion%20matrix.JPG)
+
+- **True positve:** model predicts 1 when truth is 1.
+- **True negative:** model predicts 0 when truth is 0.
+- **False positive:** model predicts 1 when truth is 0.
+- **False negative:** model predicts 0 when truth is 1.
