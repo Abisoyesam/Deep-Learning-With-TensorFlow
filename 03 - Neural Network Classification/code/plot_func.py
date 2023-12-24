@@ -38,8 +38,7 @@ def plot_decision_boundary(model, X, y):
     plt.xlim(xx.min(), xx.max())
     plt.ylim(yy.min(), yy.max())
 
-def plot_confusion_matrix(y_test, y_preds, classes=None):
-    figsize = (10, 10)
+def plot_confusion_matrix(y_test, y_preds, classes=None, figsize=(10, 10), text_size =15):
     # Create the confusion matrix
     cm = confusion_matrix(y_test, tf.round(y_preds))
     cm_norm = cm.astype("float") / cm.sum(axis=1)[:, np.newaxis]
@@ -52,8 +51,6 @@ def plot_confusion_matrix(y_test, y_preds, classes=None):
     fig.colorbar(cax)
 
     # Create classes
-    classes = False
-
     if classes:
         labels = classes
     else:
@@ -72,13 +69,13 @@ def plot_confusion_matrix(y_test, y_preds, classes=None):
     ax.xaxis.tick_bottom()
 
     # Adjust label size
-    ax.yaxis.label.set_size(20)
-    ax.xaxis.label.set_size(20)
-    ax.title.set_size(20)
+    ax.yaxis.label.set_size(text_size)
+    ax.xaxis.label.set_size(text_size)
+    ax.title.set_size(text_size)
 
     # Set the threshold for different colors
     threshold = (cm.max() + cm.min())/2.
 
     # Plot the text on each cell
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-        plt.text(j, i, f"{cm[i, j]} ({cm_norm[i, j]*100:.1f}%)", horizontalalignment="center", color="white" if cm[i, j] > threshold else "black", size=15)
+        plt.text(j, i, f"{cm[i, j]} ({cm_norm[i, j]*100:.1f}%)", horizontalalignment="center", color="white" if cm[i, j] > threshold else "black", size=text_size)

@@ -23,3 +23,5 @@
     - Getting familiar with the data
     - `Flatten()` input shapes
     - Losses for multiclass classification can be either `CategoricalCrossentropy` or `SparseCategoricalCrossentropy`.
+    - Normalizing data (range 0 to 1); divide by `255`
+    - Finding ideal learning rate
