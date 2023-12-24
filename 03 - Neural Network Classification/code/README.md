@@ -19,4 +19,5 @@
     - `False negative`, `False positive`, `True positive`, `True negative`.
 
 - <a href='./04 - Multiclass Classification.ipynb'>Multi Class Neural Network Classification</a> 
-    - 
+    - Loading fashion mnist from `tf.keras.datasets`
+    - Getting familiar with the data

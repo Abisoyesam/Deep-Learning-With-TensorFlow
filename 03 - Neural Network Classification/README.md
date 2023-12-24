@@ -163,7 +163,7 @@ history = model.fit(X, y, epochs=n_iters)
 |Confusion matrix|NA|`Custom function` $\\$ `sklearn.metrics.confusion_matrix()`|When comparing prediction to truth label to see where model gets confused.|
 
 
-:key: **False Positive:** By analogy - A false positive is when someone who doesn't have coronavirus tests positive for it. **False Negative:** Someone who has coronavirus tested negative for it.
+:key: **False Positive:** By analogy - A false positive is when someone who doesn't have coronavirus tests positive for it. Healthy person incorrectly identified as sick. **False Negative:** Someone who has coronavirus tested negative for it. Sick person incorrectly identified as healthy. 
 
 :book: **Precision Recall Tradeoff:** Unfortunately, you can't have both precision and recall high. <span style="color:yellow">If you increase precision, it will reduce recall, and vice versa.</span>
 
@@ -176,4 +176,6 @@ history = model.fit(X, y, epochs=n_iters)
 - **False negative:** model predicts 0 when truth is 1.
 
 ## Multi-Class Neural Network Classification
-When you have more than two classes as an option, it is known as **multi-class classification**.
+When you have more than two classes as an option, it is known as **multi-class classification**. 
+
+* **Dataset:** Fashion MNIST 
