@@ -21,3 +21,5 @@
 - <a href='./04 - Multiclass Classification.ipynb'>Multi Class Neural Network Classification</a> 
     - Loading fashion mnist from `tf.keras.datasets`
     - Getting familiar with the data
+    - `Flatten()` input shapes
+    - Losses for multiclass classification can be either `CategoricalCrossentropy` or `SparseCategoricalCrossentropy`.

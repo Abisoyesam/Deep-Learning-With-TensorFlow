@@ -179,3 +179,14 @@ history = model.fit(X, y, epochs=n_iters)
 When you have more than two classes as an option, it is known as **multi-class classification**. 
 
 * **Dataset:** Fashion MNIST 
+
+:key: <span style="color:yellow">Make sure you flatten your input shape. To solve shape error. Also, make sure you scale your data. ANN performs better on **Normalization**</span>
+
+```py
+tf.keras.Sequential([
+    # Note: 28, 28 is just a demo.
+    tf.keras.layers.Flatten(input_shape=(28,28))
+])
+```
+### Categorical Crossentropy VS Sparse Categorical
+> **CategoricalCrossentropy** is used when the labels is `hot-encoded` if it is in `integer` please use **SparseCategoricalCrossentropy**.
