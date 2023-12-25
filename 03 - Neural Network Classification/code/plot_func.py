@@ -1,3 +1,4 @@
+import random
 import itertools
 import numpy as np
 import matplotlib.pyplot as plt
@@ -79,3 +80,28 @@ def plot_confusion_matrix(y_test, y_preds, classes=None, figsize=(10, 10), text_
     # Plot the text on each cell
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         plt.text(j, i, f"{cm[i, j]} ({cm_norm[i, j]*100:.1f}%)", horizontalalignment="center", color="white" if cm[i, j] > threshold else "black", size=text_size)
+
+def plot_random_image(model, images, true_labels, classes):
+    """
+    Picks a random image, plots it and labels it with a prediction and truth label
+    """
+    # Set random integer
+    i = random.randint(0, len(images))
+
+    # Create prediction and target
+    target_image = images[i]
+    pred_probs = model.predict(target_image.reshape(1,28,28))
+    pred_label = classes[pred_probs.argmax()]
+    true_label = classes[true_labels[i]]
+
+    # Plot the image
+    plt.imshow(target_image, cmap=plt.cm.binary)
+
+    # Change the color of the title depending on if the prediction is rigght or wrong
+    if pred_label == true_label:
+        color = "green"
+    else:
+        color = 'red'
+
+    # Add xlabel information (prediction/true label)
+    plt.xlabel("Pred: {} {:2.0f}% (True: {})".format(pred_label, 100*tf.reduce_max(pred_probs), true_label), color=color)
