@@ -31,7 +31,7 @@ Click <a href="./03 - Neural Network Classification/README.md">**here**</a> to r
 
 **Topics covered are:** Building hands-on Neural Network Classification model; Neural Network architectures, Steps in modelling with tensorflow, Improving the model, Non linear activations (Sigmoid, ReLU), Replicating non-linear activation function from scratch, Evaluating on testing data, Visualizing history - loss and accuracy curve, Find the best learning rate, Evaluation methods - accuracy, precision, recall, F1-score, confusion matrix; Anatomy of confusion matrix, Multiclass Neural Network Classification.
 
-## Lesson 4: Convolutional Neural Network
+## Lesson 4: Convolutional Neural Network with TensorFlow
 
 Click <a href="./04 - Convolutional Neural Network/README.md">**here**</a> to read the documentation. 
 
