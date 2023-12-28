@@ -57,6 +57,8 @@ history = model.fit(train_data, train_labels,
 1. **Conv2D:** It stands for convolutional 2D for 2-dimensional data with height and width such as images. It extracts/learns the most important features from the images.
 2. **MaxPool2D:** It reduces the dimensionality of the learned image features. The important features learned from Conv is further learned to extract the most important ones.
 
+> There are almost unlimited ways you could stack together a convolutional neural network.
+
 |Hyperparameter/Layer type|What does it do?|Typical Layer|
 |:------------:|:--------------------:|:----------:|
 |Input image(s)|Target images you'd like to discover patterns in|Whatever you can take a picture (or video) of|
@@ -67,3 +69,7 @@ history = model.fit(train_data, train_labels,
 |Fully connected layer|Further refines learned features from convolution layers|`tf.keras.layers.Dense`|
 |Output layer|Takes learned features and outputs them in shape of target labels|`output_shape = [number_of_classes]` e.g 3 for pizza, steak, sushi|
 |Output activation|Adds non-linearities to output layer|`sigmoid` for binary classification $\\$ `softmax` for multiclass classification|
+
+![Simple CNN](./images/simple_CNN.JPG)
+
+![Deeper CNN](./images/deeper_CNN.JPG)
