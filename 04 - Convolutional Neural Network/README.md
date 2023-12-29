@@ -59,6 +59,8 @@ history = model.fit(train_data, train_labels,
 
 > There are almost unlimited ways you could stack together a convolutional neural network.
 
+## Hyperparameters and Layer Types
+
 |Hyperparameter/Layer type|What does it do?|Typical Layer|
 |:------------:|:--------------------:|:----------:|
 |Input image(s)|Target images you'd like to discover patterns in|Whatever you can take a picture (or video) of|

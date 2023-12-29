@@ -35,4 +35,4 @@ Click <a href="./03 - Neural Network Classification/README.md">**here**</a> to r
 
 Click <a href="./04 - Convolutional Neural Network/README.md">**here**</a> to read the documentation. 
 
-**Topics covered are:** 
+**Topics covered are:** Computer vision applications, Building hands-on CNN mode, Convolutional Neural Network architectures; Conv2D and MaxPool2D explanation, Food 101 datasets, Walking through directory of data using `os` module, Visualizing random food images programatically,
