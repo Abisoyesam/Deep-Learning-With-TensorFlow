@@ -9,3 +9,4 @@
 - <a href="./02 - Non CNN for Image.ipynb">Non Convolutional Neural Network for Image data </a> 
     - Replicate tensorflow playground model
     - Improve the model to help with better prediction, not guessing.
+    - Increased trainable param result to better model performance.

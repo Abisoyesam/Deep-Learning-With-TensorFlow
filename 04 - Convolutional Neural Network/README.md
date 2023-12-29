@@ -135,3 +135,5 @@ history_1 = model_1.fit(train_data, epochs=5, steps_per_epoch=len(train_data), v
 ## Non CNN model on image data
 
 Creating a model to replicate the Tensorflow Playground model will work; but, the model will not perform well. It may be guessing (i.e) ~ 50% model or validation accuracy. 
+
+You can add extra hidden layers and increase the neurons. This would help the model to have more trainable params, thereby increasing the accuracy of the model. Nonetheless, CNN is still better than non CNN model fitted with image data.
