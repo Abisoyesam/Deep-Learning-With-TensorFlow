@@ -48,8 +48,8 @@ model.compile(loss="binary_crossentropy",
     optimizer="adam", metrics=['accuracy'])
 
 # 3. Fit the model
-history = model.fit(train_data, train_labels, 
-                    epochs=5)
+history = model.fit(train_data, epochs=5)
+# The train_label (y) got created from the train_data automatically.
 ```
 
 :key: **Note**
@@ -75,3 +75,59 @@ history = model.fit(train_data, train_labels,
 ![Simple CNN](./images/simple_CNN.JPG)
 
 ![Deeper CNN](./images/deeper_CNN.JPG)
+
+## End-to-end Example
+For end-to-end CNN, the following are the step:
+- Load our images
+- Preprocess our images
+- Build CNN to find patterns
+- Compile our CNN
+- Fit the CNN model to data
+
+**Sample code for loading and preprocessing**
+
+```py
+import tensorflow as tf
+from tf.keras.preprocessing.image import ImageDataGenerator
+
+tf.random.set_seed(42)
+
+# Preprocess the data
+train_datagen = ImageDataGenerator(rescale=1./255)
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+# Set path to the data directory
+train_dir = "../path/to/thedata"
+test_dir = "../path/to/testdata"
+
+# Import data from directories and turn it into batches
+train_data = train_datagen.flow_from_directory(directory=train_dir, batch_size=32, target_size=(224,224), class_mode="binary", seed=42)
+
+valid_data = valid_datagen.flow_from_directory(directory=test_dir, batch_size=32, target_size=(224, 224), class_mode="binary", seed=42)
+```
+
+**ImageDataGenerator:** Generate batches of tensor image data with real-time data augmentation.
+
+**Flow_from_directory:** Takes the path to a directory & generates batches of augmented data.
+
+```py
+# Build a CNN model (same as the Tiny VGG on the CNN explainer website)
+model_1 = tf.keras.Sequential([
+    # VGG -> Notice 2 Conv2D and 1 MaxPooling2D
+    tf.keras.layers.Conv2D(filters=10, kernel_size=3, activation='relu', input_shape=(224, 224, 3)),
+    tf.keras.layers.Conv2D(10, 3, activation='relu'),
+    tf.keras.layers.MaxPooling2D(pool_size=2, padding="valid"),
+    tf.keras.layers.Conv2D(10, 3, activation="relu"),
+    tf.keras.layers.Conv2D(10, 3, activation="relu"),
+    tf.keras.layers.MaxPooling2D(2),
+    # Flatten the images before the output layer
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(1, activation="sigmoid")
+])
+
+# Compile the model
+model_1.compile(loss="binary_crossentropy", optimizer="adam", metrics=['accuracy'])
+
+# Fit the model
+history_1 = model_1.fit(train_data, epochs=5, steps_per_epoch=len(train_data), validation_data=valid_data, validation_steps=len(valid_data))
+```
