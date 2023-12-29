@@ -131,3 +131,7 @@ model_1.compile(loss="binary_crossentropy", optimizer="adam", metrics=['accuracy
 # Fit the model
 history_1 = model_1.fit(train_data, epochs=5, steps_per_epoch=len(train_data), validation_data=valid_data, validation_steps=len(valid_data))
 ```
+
+## Non CNN model on image data
+
+Creating a model to replicate the Tensorflow Playground model will work; but, the model will not perform well. It may be guessing (i.e) ~ 50% model or validation accuracy. 
