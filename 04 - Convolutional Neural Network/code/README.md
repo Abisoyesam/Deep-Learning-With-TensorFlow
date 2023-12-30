@@ -11,5 +11,6 @@
     - Improve the model to help with better prediction, not guessing.
     - Increased trainable param result to better model performance.
 
-- <a href="./02 - Non CNN for Image.ipynb">Breaking down CNN model</a> 
-    -    
+- <a href="./03 - Breaking down CNN model.ipynb">Breaking down CNN model</a> 
+    - Becoming familiar with data (visualize!!)
+    - Preprocessing the data  

@@ -142,3 +142,20 @@ You can add extra hidden layers and increase the neurons. This would help the mo
 > You can think of trainable parameters as **patterns a model can learn from data.** Intuitively, you might think more is better. And in lots of cases, it is. But in this cases, the difference here is the two different styles of model we're using. Where a series of dense layers has a number of different learnable parameters connected to each other and hence a higher number of possible learnable patterns, **a convolutional neural network seeks to sort out and learn the most important patterns is an image**. So, even though there are less learnable parameters in out convolutional neural network, these are often more helpful in deciphering between different **features** in an image.
 
 ## Binary Classification Explanation
+The Step are as follows:
+
+- Get familiar to the data
+- Preprocess the data
+    - The data are turn into **batches**. A batch is a small subset of data. And it is done for the following reason:
+    - 10,000 images (or more) might not fit into the memory of the processor.
+    - Trying to learn the patterns in 10,000 images in one hit could result in the model not being able to learn very well.
+    - Why **32 batches**? Recommended by `Yann LeCun` founder of CNN, Professor at NYU, chief AI Scientist at Facebook.
+```py
+# Create train and test data generators and rescale the data
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+train_datagen = ImageDataGenerator(rescale=1./255)
+test_datagen = ImageDataGenerator(rescale=1./255)
+```
+**ImageDataGenerator:** It is a way of loading data. Once the images are loaded, they are rescaled by dividing by 255.
+- Create a CNN model
