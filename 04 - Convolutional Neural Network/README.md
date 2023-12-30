@@ -1,4 +1,5 @@
 # Convolutional Neural Network and Computer Vision
+CNNs can be used for many different computer vision tasks, such as image processing, classification, segmentation, and object detection.
 
 ## What is a Computer Vision Problem?
 Computer being used for visual problem. Training the computer to see. It applications are: 
@@ -137,3 +138,7 @@ history_1 = model_1.fit(train_data, epochs=5, steps_per_epoch=len(train_data), v
 Creating a model to replicate the Tensorflow Playground model will work; but, the model will not perform well. It may be guessing (i.e) ~ 50% model or validation accuracy. 
 
 You can add extra hidden layers and increase the neurons. This would help the model to have more trainable params, thereby increasing the accuracy of the model. Nonetheless, CNN is still better than non CNN model fitted with image data.
+
+> You can think of trainable parameters as **patterns a model can learn from data.** Intuitively, you might think more is better. And in lots of cases, it is. But in this cases, the difference here is the two different styles of model we're using. Where a series of dense layers has a number of different learnable parameters connected to each other and hence a higher number of possible learnable patterns, **a convolutional neural network seeks to sort out and learn the most important patterns is an image**. So, even though there are less learnable parameters in out convolutional neural network, these are often more helpful in deciphering between different **features** in an image.
+
+## Binary Classification Explanation

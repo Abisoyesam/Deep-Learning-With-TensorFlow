@@ -10,3 +10,6 @@
     - Replicate tensorflow playground model
     - Improve the model to help with better prediction, not guessing.
     - Increased trainable param result to better model performance.
+
+- <a href="./02 - Non CNN for Image.ipynb">Breaking down CNN model</a> 
+    -    
