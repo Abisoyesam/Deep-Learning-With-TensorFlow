@@ -16,3 +16,5 @@
     - Preprocessing the data.
     - Creating CNN baseline.
     - Model **overfitting** when validation loss increases.
+    - Reducing overfitting
+    - Data augmentation

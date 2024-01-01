@@ -161,6 +161,8 @@ test_datagen = ImageDataGenerator(rescale=1./255)
 
 - Create a CNN model (Start with a baseline)
     - A baseline is a relatively simple model or existing result that you setup when beginning a machine learning experiment and then as you keep experimenting, you try to beat the baseline.
+    - **Ways to induce overfitting:** Increase of the number of conv layer, increase the number of conv filters, add another dense layer to output of our flattened layer
+    - **Ways to reduce overfitting:** Add data augmentation, add regularization layers (such as MaxPool2D), add more data. 
 
 ### Breakdown of Conv2D layer
 ```py
@@ -187,3 +189,18 @@ if padding = same, output shape is equal to input shape but if "valid" ouput sha
 |Strides|The number of steps a filter takes across an image at a time (e.g if strides=1, a filter moves across an image 1 pixel at a time)| 1 (default), 2|
 
 :book: For interactive demonstration of the above hyperparameters, see the <a herf="https://poloclub.github.io/cnn-explainer/">CNN explainer website</a>.
+
+### Breakdown of MaxPool2D layer
+
+MaxPooling condenses the output shape to half so that there can be an less but important trainable parameters to work on. The most important features. This is done to reduce overfitting of a model.
+
+|Method to improve a model $\\$ (reduce overfitting)| What does it do?|
+|:------------:|:-------------:|
+|More data | Give a model more of a chance to learn patterns between samples (e.g if a model is performing poorly on image of pizza, show it more image of pizza)|
+|Data augmentation|Increase the diversity of your training dataset without collecting more data (e.g take your photos of pizza and randomly rotate them 30^0) $\\$ Increased diversity forces a model to learn more generalization patterns|
+|Better data|Not all data samples are created equally. Removing poor samples from or adding better samples to your dataset can improve your model's performance|
+|Use transfer learning|Take a model's pre-learned patterns from one problem and tweak them to suit your own problem. For example, take a model trained on pictures of cars to recognize pictures of trucks.|
+
+### Data Augmentation
+
+Data augmentation is the process of **altering** our training data leading it to have more diversity and in turn allowing our model to learn more generalizable (hopefully) patterns. Altering might mean <span style="color:yellow">adjusting the rotation of an image, flipping it, cropping it or something similiar.</span>
