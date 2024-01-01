@@ -158,4 +158,14 @@ train_datagen = ImageDataGenerator(rescale=1./255)
 test_datagen = ImageDataGenerator(rescale=1./255)
 ```
 **ImageDataGenerator:** It is a way of loading data. Once the images are loaded, they are rescaled by dividing by 255.
-- Create a CNN model
+- Create a CNN model (Start with a baseline)
+    - A baseline is a relatively simple model or existing result that you setup when beginning a machine learning experiment and then as you keep experimenting, you try to beat the baseline.
+
+### Breakdown of Conv2D layer
+```py
+tf.keras.layer.Conv2D(filters=10, kernel_size = (3,3), strides=(1,1), padding="same")
+
+OR 
+
+tf.keras.layer.Conv2D(filters=10, kernel_size = 3, strides= 1, padding="same")
+``` 
