@@ -158,6 +158,7 @@ train_datagen = ImageDataGenerator(rescale=1./255)
 test_datagen = ImageDataGenerator(rescale=1./255)
 ```
 **ImageDataGenerator:** It is a way of loading data. Once the images are loaded, they are rescaled by dividing by 255.
+
 - Create a CNN model (Start with a baseline)
     - A baseline is a relatively simple model or existing result that you setup when beginning a machine learning experiment and then as you keep experimenting, you try to beat the baseline.
 
@@ -168,4 +169,21 @@ tf.keras.layer.Conv2D(filters=10, kernel_size = (3,3), strides=(1,1), padding="s
 OR 
 
 tf.keras.layer.Conv2D(filters=10, kernel_size = 3, strides= 1, padding="same")
+'''
+Filter is the number of sliding window going across an input.
+
+Kernel size is the size of the sliding window going an input.
+
+Stride is the size of the step sliding window takes across an input.
+
+if padding = same, output shape is equal to input shape but if "valid" ouput shape get compressed
+'''
 ``` 
+|Hyperparameter|What does it do?|Typical Value|
+|:------------:|:--------------:|:---------:|
+|Filters|Decides how many filters should pass over an input tensor (e.g sliding windows over an image)|10, 32, 64, 128 (higher value lead to more complex models)|
+|Kernel size (also called filter size)|Determines the shape of the filters (sliding windows) over the output|3, 5, 7 (lower values learn smaller features, higher value learn larger features)|
+|Padding|Pads the target tensor with zeros (if "same") to preserve input shape. Or leave in the target tensor as is (if "valid"), lowering output shape|`same` or `valid`|
+|Strides|The number of steps a filter takes across an image at a time (e.g if strides=1, a filter moves across an image 1 pixel at a time)| 1 (default), 2|
+
+:book: For interactive demonstration of the above hyperparameters, see the <a herf="https://poloclub.github.io/cnn-explainer/">CNN explainer website</a>.

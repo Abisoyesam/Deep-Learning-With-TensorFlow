@@ -13,5 +13,6 @@
 
 - <a href="./03 - Breaking down CNN model.ipynb">Breaking down CNN model</a> 
     - Becoming familiar with data (visualize!!)
-    - Preprocessing the data  
-    - Creating CNN baseline
+    - Preprocessing the data.
+    - Creating CNN baseline.
+    - Model **overfitting** when validation loss increases.
